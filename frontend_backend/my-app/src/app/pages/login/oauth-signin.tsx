@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "../components/ui/button";
+import { Button } from "../../../components/ui/button";
 import { Provider } from "@supabase/supabase-js";
 import { Github} from "lucide-react";
 import { oAuthSignIn } from "./actions";

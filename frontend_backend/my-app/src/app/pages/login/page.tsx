@@ -1,17 +1,17 @@
 
-import { Button } from "../components/ui/button";
+import { Button } from "../../../components/ui/button";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardDescription,
   CardContent,
-} from "../components/ui/card";
-import { Label } from "../components/ui/label";
-import { Input } from "../components/ui/input";
+} from "../../../components/ui/card";
+import { Label } from "../../../components/ui/label";
+import { Input } from "../../../components/ui/input";
 import { emailLogin, signup } from "./actions";
 import { redirect } from "next/navigation";
-import { createClient } from "../app/utils/supabase/server";
+import { createClient } from "../../utils/supabase/server";
 import { OAuthButtons } from "./oauth-signin";
 
 export default async function Login({

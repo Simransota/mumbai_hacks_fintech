@@ -22,6 +22,7 @@ import {
 } from "../../../../components/ui/form"
 import { Input } from "../../../../components/ui/input"
 import { Progress } from "../../../../components/ui/progress"
+import Link from "next/link"
 
 // Constants
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
@@ -230,6 +231,7 @@ export default function Component() {
                 Next <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             ) : (
+              <Link href={"/pages/farmer/farmer-predictive-model"}>
               <Button type="submit" disabled={isSubmitting} className="ml-auto">
                 {isSubmitting ? (
                   <>
@@ -240,6 +242,7 @@ export default function Component() {
                   "Submit Information"
                 )}
               </Button>
+              </Link>
             )}
           </div>
         </form>

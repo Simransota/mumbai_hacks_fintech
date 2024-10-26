@@ -1,7 +1,7 @@
 "use client"
 
 import { zodResolver } from "@hookform/resolvers/zod"
-import { CalendarIcon, ChevronRight, Loader2 } from "lucide-react"
+import { CalendarIcon, ChevronRight, Link, Loader2 } from "lucide-react"
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
@@ -157,6 +157,7 @@ export default function UpdatedStudentInfoForm() {
                 Next <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             ) : (
+              <Link href={"/pages/students/student-predictive-model"}>
               <Button type="submit" disabled={isSubmitting} className="ml-auto">
                 {isSubmitting ? (
                   <>
@@ -167,6 +168,7 @@ export default function UpdatedStudentInfoForm() {
                   "Submit Information"
                 )}
               </Button>
+              </Link>
             )}
           </div>
         </form>

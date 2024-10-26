@@ -1,7 +1,7 @@
 'use client'
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ChevronRight, Loader2 } from "lucide-react";
+import { ChevronRight, Link, Loader2 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -11,7 +11,7 @@ import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-import { Button } from "../../components/ui/button";
+import { Button } from "../../../components/ui/button";
 import {
   Form,
   FormControl,
@@ -19,10 +19,10 @@ import {
   FormField,
   FormItem,
   FormLabel,
-} from "../../components/ui/form";
-import { Input } from "../../components/ui/input";
-import { Progress } from "../../components/ui/progress";
-import { Textarea } from "../../components/ui/textarea";
+} from "../../../components/ui/form";
+import { Input } from "../../../components/ui/input";
+import { Progress } from "../../../components/ui/progress";
+import { Textarea } from "../../../components/ui/textarea";
 
 // Constants
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
@@ -188,7 +188,7 @@ export default function BusinessForm() {
                 name={field as keyof z.infer<typeof formSchema>}
                 render={({ field: formField }) => (
                   <FormItem>
-                    <FormLabel className="text-black">
+                    <FormLabel className="text-white">
                       {getFieldLabel(field)}
                     </FormLabel>
                     <FormControl>
@@ -214,6 +214,7 @@ export default function BusinessForm() {
                 Next <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             ) : (
+              <Link href={'/pages/small-business-predictive-model'}>
               <Button type="submit" disabled={isSubmitting} className="ml-auto">
                 {isSubmitting ? (
                   <>
@@ -224,6 +225,7 @@ export default function BusinessForm() {
                   "Submit Information"
                 )}
               </Button>
+              </Link>
             )}
           </div>
         </form>

@@ -3,9 +3,9 @@
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
 
-import { createClient } from "../app/utils/supabase/server"
+import { createClient } from "../../utils/supabase/server"
 import { Provider } from '@supabase/supabase-js'
-import { getURL } from "../app/utils/helpers"
+import { getURL } from "../../utils/helpers"
 
 // Login function
 export async function emailLogin(formData: FormData) {
