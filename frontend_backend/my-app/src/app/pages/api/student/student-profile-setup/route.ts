@@ -7,8 +7,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
       // Step 1: Fetch data from Supabase
       const { data: supabaseData, error: supabaseError } = await supabase
-        .from('your_table') // Replace with your actual table name
-        .select('attribute1, attribute2, attribute3'); // Replace with your actual attribute names
+        .from('students') // Replace with your actual table name
+        .select('*'); // Replace with your actual attribute names
 
       if (supabaseError) throw supabaseError;
 
