@@ -1,6 +1,6 @@
 "use client"
 import * as React from 'react'
-import { cn } from '../../app/utils/cn'
+import { cn } from '../../../app/utils/cn'
 
 const LayoutContext = React.createContext<{
   offset: number

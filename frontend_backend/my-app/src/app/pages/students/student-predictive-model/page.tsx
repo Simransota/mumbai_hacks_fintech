@@ -1,5 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card"
-import { Progress } from "../../components/ui/progress"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../../../components/ui/card"
+import { Progress } from "../../../../components/ui/progress"
 import { Activity, BarChart2, BookOpen, CreditCard, DollarSign, GraduationCap, LineChart, ShoppingBag, Smartphone, User, Zap } from "lucide-react"
 
 export default function PredictiveModel() {
