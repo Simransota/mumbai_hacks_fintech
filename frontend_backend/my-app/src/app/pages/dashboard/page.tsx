@@ -1,21 +1,21 @@
 "use client"
 import React from 'react';
-import Layout from '../../app/dashboard/layout';
-import { Button } from '../../components/ui/button';
+import Layout from '../dashboard/layout';
+import { Button } from '../../../components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '../../components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/tabsdashboard';
+} from '../../../components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../../components/tabsdashboard';
 // import ThemeSwitch from '../../components/theme-switch';
-import { UserNav } from '../../components/user-nav';
-import { RecentSales } from '../../components/recent-sales';
-import  Overview  from '../../components/overview';
-import { Calendar } from '../../components/ui/calendar';
-import DebtReductionPage from "../../components/debt-planner"
+import { UserNav } from '../../../components/user-nav';
+import { RecentSales } from '../../../components/recent-sales';
+import  Overview  from '../../../components/overview';
+import { Calendar } from '../../../components/ui/calendar';
+import DebtReductionPage from "../../../components/debt-planner"
 
 const topNav = [
   {

@@ -11,7 +11,7 @@ import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-import { Button } from "../../components/ui/button"
+import { Button } from "../../../../components/ui/button"
 import {
   Form,
   FormControl,
@@ -19,9 +19,9 @@ import {
   FormField,
   FormItem,
   FormLabel,
-} from "../../components/ui/form"
-import { Input } from "../../components/ui/input"
-import { Progress } from "../../components/ui/progress"
+} from "../../../../components/ui/form"
+import { Input } from "../../../../components/ui/input"
+import { Progress } from "../../../../components/ui/progress"
 
 // Constants
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB

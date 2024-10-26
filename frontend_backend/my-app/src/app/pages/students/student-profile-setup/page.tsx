@@ -6,8 +6,8 @@ import { useState } from "react"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
 
-import { Button } from "../../components/ui/button"
-import { Calendar } from "../../components/ui/calendar"
+import { Button } from "../../../../components/ui/button"
+import { Calendar } from "../../../../components/ui/calendar"
 import {
   Form,
   FormControl,
@@ -16,16 +16,16 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "../../components/ui/form"
-import { Input } from "../../components/ui/input"
+} from "../../../../components/ui/form"
+import { Input } from "../../../../components/ui/input"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "../../components/ui/popover"
-import { Progress } from "../../components/ui/progress"
-import { Textarea } from "../../components/ui/textarea"
-import { cn } from "../utils/cn"
+} from "../../../../components/ui/popover"
+import { Progress } from "../../../../components/ui/progress"
+import { Textarea } from "../../../../components/ui/textarea"
+import { cn } from "../../../utils/cn"
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 const ACCEPTED_FILE_TYPES = ["application/pdf", "image/jpeg", "image/png"];
