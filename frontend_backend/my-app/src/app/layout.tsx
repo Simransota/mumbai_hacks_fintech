@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 import { Inter } from "next/font/google";
 import "./globals.css";
+import NavbarDemo  from "../components/Navbar";
 // const defaultUrl = process.env.VERCEL_URL ? https://${process.env.VERCEL_URL}
 // : "http://localhost:3000";
 
@@ -19,11 +20,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" >
+    <html lang="en" className="dark" >
       <body className={inter.className}>
         <div className="relative w-full flex items-center
         justify-center">
-          
+          {/* <NavbarDemo/> */}
         </div>
         {children}
       </body>

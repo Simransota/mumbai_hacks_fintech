@@ -49,13 +49,13 @@ function Dashboard() {
       {/* ===== Main ===== */}
       <Layout.Body>
         <div className='mb-2 flex items-center justify-between space-y-2'>
-          <h1 className='text-2xl font-bold tracking-tight text-black'>Creditworthiness Dashboard</h1>
+          <h1 className='text-2xl font-bold tracking-tight text-white'>Creditworthiness Dashboard</h1>
           <div className='flex items-center space-x-2'>
-            <Button className='bg-black'>Download Credit Report</Button>
+            <Button className='bg-white'>Download Credit Report</Button>
           </div>
         </div>
         <Tabs orientation='vertical' defaultValue='overview' className='space-y-4'>
-          <div className='w-full overflow-x-auto pb-2 text-black'>
+          <div className='w-full overflow-x-auto pb-2 text-white'>
             <TabsList>
               <TabsTrigger value='overview'>Credit Overview</TabsTrigger>
               <TabsTrigger value='score-improvement'>Credit Score Improvement</TabsTrigger>
@@ -66,7 +66,7 @@ function Dashboard() {
             <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
-                  <CardTitle className='text-sm font-medium text-black'>Credit Score</CardTitle>
+                  <CardTitle className='text-sm font-medium text-white'>Credit Score</CardTitle>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -81,13 +81,13 @@ function Dashboard() {
                   </svg>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold text-black'>720</div>
-                  <p className='text-xs text-muted-foreground text-black'>Your current credit score</p>
+                  <div className='text-2xl font-bold text-white'>720</div>
+                  <p className='text-xs text-muted-foreground text-white'>Your current credit score</p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
-                  <CardTitle className='text-sm font-medium text-black'>Pending Payments</CardTitle>
+                  <CardTitle className='text-sm font-medium text-white'>Pending Payments</CardTitle>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -104,13 +104,13 @@ function Dashboard() {
                   </svg>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold text-black'>₹15,000</div>
-                  <p className='text-xs text-muted-foreground text-black'>Pending payments this month</p>
+                  <div className='text-2xl font-bold text-white'>₹15,000</div>
+                  <p className='text-xs text-muted-foreground text-white'>Pending payments this month</p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
-                  <CardTitle className='text-sm font-medium text-black'>Upcoming Loan Payments</CardTitle>
+                  <CardTitle className='text-sm font-medium text-white'>Upcoming Loan Payments</CardTitle>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -126,13 +126,13 @@ function Dashboard() {
                   </svg>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold text-black'>₹25,000</div>
-                  <p className='text-xs text-muted-foreground text-black'>Loan payments due this week</p>
+                  <div className='text-2xl font-bold text-white'>₹25,000</div>
+                  <p className='text-xs text-muted-foreground text-white'>Loan payments due this week</p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
-                  <CardTitle className='text-sm font-medium text-black'>Recent Transactions</CardTitle>
+                  <CardTitle className='text-sm font-medium text-white'>Recent Transactions</CardTitle>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -147,13 +147,13 @@ function Dashboard() {
                   </svg>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold text-black'>+₹5,000</div>
-                  <p className='text-xs text-muted-foreground text-black'>Recent credits in your account</p>
+                  <div className='text-2xl font-bold text-white'>+₹5,000</div>
+                  <p className='text-xs text-muted-foreground text-white'>Recent credits in your account</p>
                 </CardContent>
               </Card>
             </div>
             <div className='grid grid-cols-1 gap-4 lg:grid-cols-7'>
-              <Card className='col-span-1 lg:col-span-4 text-black'>
+              <Card className='col-span-1 lg:col-span-4 text-white'>
                 <CardHeader>
                   <CardTitle>Historical Credit Score Trends</CardTitle>
                 <CardDescription>
@@ -169,7 +169,7 @@ function Dashboard() {
                   <Overview />
                 </CardContent>
               </Card>
-              <Card className='col-span-1 lg:col-span-3 text-black'>
+              <Card className='col-span-1 lg:col-span-3 text-white'>
                 <CardHeader>
                   <CardTitle>Recent Credit Reports</CardTitle>
                   <CardDescription>Your credit history for the past month.</CardDescription>

@@ -26,7 +26,7 @@ export default function Overview() {
         ]}
         // Assuming credit scores are out of 1000
       />
-      <p className="mt-2 text-xs text-gray-500">
+      <p className="mt-2 text-xs text-white">
         Higher credit scores generally indicate better creditworthiness, which can lead to more favorable loan terms and interest rates.
       </p>
     </div>

@@ -81,7 +81,7 @@ export default function FinancialCalculator() {
       <h1 className="text-3xl font-bold mb-6 text-center">Financial Calculator</h1>
 
       {/* Debt Details Table */}
-      <div className="bg-white shadow-md rounded-lg p-6 mb-8">
+      <div className="bg-black shadow-md rounded-lg p-6 mb-8">
         <h2 className="text-xl font-semibold mb-4">Debt Details</h2>
         <Table>
           <TableHeader>
@@ -139,7 +139,7 @@ export default function FinancialCalculator() {
       </div>
 
       {/* Extra Payments Section */}
-      <div className="bg-white shadow-md rounded-lg p-6 mb-8">
+      <div className="bg-black shadow-md rounded-lg p-6 mb-8">
         <h2 className="text-xl font-semibold mb-4">Extra Payments</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Per Month Input */}
@@ -204,7 +204,7 @@ export default function FinancialCalculator() {
       </div>
 
       {/* Fixed Total Amount Section */}
-      <div className="bg-white shadow-md rounded-lg p-6 mb-8">
+      <div className="bg-black shadow-md rounded-lg p-6 mb-8">
         <div className="flex items-start mb-4">
           <div className="flex-1">
             <Label className="text-base font-semibold">
