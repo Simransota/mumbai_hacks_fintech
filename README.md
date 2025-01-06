@@ -6,3 +6,10 @@ Leveraging Alternative Data Sources for Farmers, Students, and Small Entrepreneu
  
 
 
+## Demo
+
+Youtube link :
+https://www.youtube.com/watch?v=Eyt3SpJKLxg
+ 
+
+
